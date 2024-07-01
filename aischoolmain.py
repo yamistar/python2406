@@ -1,5 +1,7 @@
 import streamlit as st
 import finance_naver_copy ##### finance_naver_copy.py 임포트
+import bikes_da
+import meteor_shower_copy
 
 # 사이드바
 st.sidebar.header('로그인')
@@ -18,9 +20,11 @@ if user_password == '1234':
 
     elif menu == "따릉이" :
         st.subheader("따릉이 데이터 분석>>>>>>>>")
+        bikes_da.bikes_da()
 
     elif menu == "유성우" :
         st.subheader("유성우 데이터 분석>>>>>>>>")
+        meteor_shower_copy.shower_viewing_main()
 
     else :
         st.subheader("환영합니다.")
